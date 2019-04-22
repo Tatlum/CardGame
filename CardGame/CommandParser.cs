@@ -22,8 +22,10 @@ namespace CardGame.ConsoleUI
                 };
             }
 
+            int number;
+
             // Команда является числом.
-            if (int.TryParse(rawCommand, out int number))
+            if (int.TryParse(rawCommand, out number))
             {
                 return new CommandInfo()
                 {
